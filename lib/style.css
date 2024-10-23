@@ -16,7 +16,7 @@
 p {
     padding-top: 20px;
     font-weight: 700;
-    font-size: 16.8px;
+    font-size: 16px;
     padding-bottom: 20px;
     font-family: "ff-scala-sans-pro", sans-serif;
     font-weight: medium;
@@ -27,8 +27,10 @@ p {
 }
 
 .table {
+    padding: 30px 10px 20px 40px;
     border-collapse: collapse; 
-    width: 45%;
+    width: 100%;
+    height: auto;
 }
 
 .table thead th {
@@ -46,6 +48,7 @@ p {
     font-weight: 400;
     font-style: normal;
     padding: 8px 1px;
+    cursor: pointer;
 }
 
 .table tbody tr {
@@ -62,12 +65,78 @@ p {
 }
 
 .table-hover tbody tr:hover {
-    background-color: #dddddd;  
+    background-color: rgb(237, 237, 237);  
 }
 
 .table tbody tr td:first-child {
     font-weight: bold; 
     padding-left: 10px;
+}
+
+.serie-item {
+    border: 1px solid #716d6d;  
+    background-color: white;
+    width: 100%;
+}
+
+.serie-item h2 {
+    padding: 8px 25px 2px;
+    font-family: "ff-scala-sans-pro", sans-serif;
+    font-weight: medium;
+}
+
+.serie-item h3 {
+    padding: 20px 0px 15px;
+    font-family: "ff-scala-sans-pro", sans-serif;
+    font-weight: medium;
+    font-size: 17px;
+}
+
+.serie-item p {
+    padding: 10px 25px 20px;
+    font-family: "ff-scala-sans-pro", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+.serie-item img {
+    width: 100%;
+    height:auto;
+    padding-bottom: 10px;
+}
+
+.h2w-btn {
+    width: auto; 
+    background-color: white; 
+    border: solid 1px  #716d6d;
+    border-radius: 8px; 
+    box-shadow: .5px rgba(0, 0, 0, 0.15);
+    padding: 10px 0px 10px 0px; 
+    transition: background-color 0.1s ease; 
+    display: grid; 
+    grid-template-columns: 1fr;
+    cursor: pointer;
+}
+
+.h2w-btn:hover {
+    background-color: rgb(237, 237, 237);  
+}
+
+.h2w-btn p {
+    font-family: "ff-scala-sans-pro", sans-serif;
+    font-weight: 700;
+    padding: 0px 15px 0px 15px;
+}
+
+.h2w-btn img {
+    width: 15px;
+    padding: 4px 15px 0px 0px;
+}
+
+.h2w-btn:hover img {
+    opacity: 95%;
 }
 
 * {

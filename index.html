@@ -14,8 +14,11 @@
             TV Series
         </h2>
     </div>
-    <div style="padding: 30px 10px 20px 40px">
-        <table class="table table-hover">
+    <div style="display: grid; grid-template-columns: 45% 55%; gap: 0px; 
+    height: auto;">
+        <!-- left column -->
+        <div style="grid-column: 1; padding: 30px 0px 20px 40px">
+          <table class="table table-hover">
             <thead>
               <tr>
                 <th scope="col" style="width: 10%;  padding-left: 10px;">#</th>
@@ -26,11 +29,36 @@
             </thead>
             <tbody id="series">
             </tbody>
-        </table>
-        <p id="seasons-average">
-        </p>
+          </table>
+          <p id="seasons-average">
+          </p>
+        </div>
+        <!-- right column -->
+        <div id="serie-preview" style="grid-column: 2; padding: 68px 40px 20px 20px; display: none;">
+          <!-- info -->
+          <div class="serie-item">
+            <img id="serie-poster">
+            <h2 id="serie-name">
+            </h2>
+            <p id="serie-description">
+            </p>
+            <!-- how 2 watch -->
+            <div style="border-top: 1px dashed #716d6d; padding-left: 25px; padding-bottom: 20px;">
+              <h3>
+                How to Watch
+              </h3>
+              <button id="h2w-btn" class="h2w-btn">
+                <p id="serie-channel" style="grid-column: 1;">
+                </p>
+                <img src="img/btn-open.png" style="grid-column: 2;">
+              </button>
+            </div>
+          </div>
+        </div>
 
+        
     </div>
+    
     
 </body>
 
